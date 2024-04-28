@@ -19,6 +19,14 @@ export default function Index() {
           });
         }
       }>按钮</Button>
+      <Button className='btn-max-w' plain type='primary' onClick={
+      () => {
+          console.log("heehowiejf");
+          Taro.navigateTo({
+            url: '/pages/pageview/image_display'
+          });
+        }
+      }>按钮</Button>
     </View>
   )
 }
