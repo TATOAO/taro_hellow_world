@@ -10,7 +10,7 @@ export default function Index() {
 
   return (
     <View className='index'>
-      <Text>Hello world!..! TATOAO</Text>
+      <Text>Hello world! TATOAO</Text>
       <Button className='btn-max-w' plain type='primary' onClick={
       () => {
           console.log("heehowiejf");
