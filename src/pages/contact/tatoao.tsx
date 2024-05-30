@@ -9,6 +9,9 @@ export default function Index() {
           src={theimage}
           show-menu-by-longpress="{{true}}"
         />
+        <Text>
+        tatoao@126.com
+        </Text>
     </View>
   )
 }

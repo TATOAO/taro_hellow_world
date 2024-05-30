@@ -1,6 +1,7 @@
-import { View, Text, Icon, Button } from '@tarojs/components'
+import { View, Text, Icon, Button, Image } from '@tarojs/components'
 import Taro, { useLoad } from '@tarojs/taro'
 import './index.scss'
+import logo_image from '../../assets/images/logo.png';
 
 export default function Index() {
 
@@ -10,23 +11,20 @@ export default function Index() {
 
   return (
     <View className='index'>
-      <Text>Hello world!..! TATOAO</Text>
-      <Button className='btn-max-w' plain type='primary' onClick={
+      <View style={{ margin: '20px', fontSize: '24px', color: 'black', textAlign: 'center' }}>
+                小程序还在开发中
+      </View>
+      <View style={{ margin: '20px', fontSize: '24px', color: 'black', textAlign: 'center' }}>
+                敬请谅解
+      </View>
+      <Button className='btn-max-w' plain onClick={
       () => {
           console.log("heehowiejf");
           Taro.navigateTo({
-            url: '/pages/pageview/PageView'
+            url: '/pages/contact/tatoao'
           });
         }
-      }>按钮</Button>
-      <Button className='btn-max-w' plain type='primary' onClick={
-      () => {
-          console.log("heehowiejf");
-          Taro.navigateTo({
-            url: '/pages/pageview/image_display'
-          });
-        }
-      }>按钮</Button>
+      }>联系我们</Button>
     </View>
   )
 }
